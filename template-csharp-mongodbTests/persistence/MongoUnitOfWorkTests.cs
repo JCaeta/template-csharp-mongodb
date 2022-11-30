@@ -225,7 +225,7 @@ namespace template_csharp_mongodb.Persistence.Tests
 
             mongoUnitOfWork.connect();
             List<EntityA> listResult = mongoUnitOfWork.findEntityAByName("entityA1");
-
         }
     }
 }
+

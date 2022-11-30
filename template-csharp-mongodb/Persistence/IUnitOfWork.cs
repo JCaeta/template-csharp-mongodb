@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace template_csharp_mongodb
 {
-    public class IUnitOfWork
+    public interface IUnitOfWork
     {
-
+        void connect();
     }
 }

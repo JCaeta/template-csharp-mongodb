@@ -30,15 +30,6 @@ namespace template_csharp_mongodb.Persistence
             this.client = new MongoClient(this.uri);
             this.database = client.GetDatabase(this.databaseName);
         }
-        public void abort()
-        {
-            // For C# there's no need to close the abort
-        }
-
-        public void commit()
-        {
-            // For C# there's no need to close the commit
-        }
 
         public void connect()
         {
@@ -53,11 +44,6 @@ namespace template_csharp_mongodb.Persistence
                 writeConcern: WriteConcern.WMajority);
 
             this.cancellationToken = CancellationToken.None; // normally a real token would be used
-        }
-
-        public void disconnect()
-        {
-            // For C# there's no need to close the connection
         }
 
         public void createEntityA(EntityA entityA)
